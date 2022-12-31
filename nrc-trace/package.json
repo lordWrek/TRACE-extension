@@ -1,0 +1,25 @@
+{
+  "name": "nrc-trace",
+  "displayName": "nrc-trace",
+  "description": "Syntax highlighting for NRC Thermal-Hydraulic System Code \"TRACE\"",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "nrc-trace",
+      "aliases": ["NRC TRACE", "nrc-trace"],
+      "extensions": [".i",".inp"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "nrc-trace",
+      "scopeName": "source.nrctrace",
+      "path": "./syntaxes/nrc-trace.tmLanguage.json"
+    }]
+  }
+}
